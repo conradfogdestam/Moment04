@@ -1,1 +1,1 @@
-#samma uppgift som uppgift C
+#samma uppgift som uppgift E, va lite retarded och skrev om uppgift D till uppgift E men orkar inte skriva om
