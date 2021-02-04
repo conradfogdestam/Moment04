@@ -40,6 +40,13 @@ while True:
             except:
                 print("inte ett heltal")
 
+        if h < 0:
+            h = 1
+        elif h > 10:
+            h = 10
+        else:
+            pass
+
         hojd.append(h)
         area.append(areafunk(s1,s2))
         volym.append(volfunk(s1,s2,h))

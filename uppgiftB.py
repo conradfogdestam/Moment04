@@ -25,17 +25,28 @@ while True:
 
     if userinput == 'Y':
         counter += 1
-        try:
-            s1 = int(input("ange rektangelns första sida: "))
-            sida1.append(s1)
-            s2 = int(input("ange rektangelns andra sida: "))
-            sida2.append(s2)
-            area.append(areafunk(s1,s2))
-            kvadrat.append(kvadratfunk(s1,s2))
-        
-        except:
-            print('Ange heltal')
+        while True:
 
+            try:
+                s1 = int(input("ange rektangelns första sida: "))
+                break
+
+            except:
+                print('Ange heltal')
+
+        while True:
+
+            try:
+                s2 = int(input("ange rektangelns andra sida: "))
+                break
+
+            except:
+                print('Ange heltal')
+
+        sida1.append(s1)
+        sida2.append(s2)
+        area.append(areafunk(s1, s2))
+        kvadrat.append(kvadratfunk(s1, s2))
         if kvadratfunk(s1,s2) == 'ja':
             print(f"Arean på rektangeln med sidorna {s1} & {s2} är {areafunk(s1,s2)}, och det är en kvadrat", "\n")
         else:
